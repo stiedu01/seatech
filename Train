@@ -3,10 +3,10 @@ from ultralytics import YOLO
 
     def main():
 
-        model = YOLO('yolov8l.pt')
+        model = YOLO('yolov8l.pt') #modeli gücüne göre trainle n,s,m,l,x
 
         # Modeli eğitin
-        model.train(data='data.yaml', epochs=100, patience=50, imgsz=640)
+        model.train(data='data.yaml', epochs=100, patience=50, imgsz=640) #epochs sayısına ve data yaml konumunu gir
 
     if __name__ == "__main__":
         main()
